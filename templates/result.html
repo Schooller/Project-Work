@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Conductor - поисковая система</title>
+  </head>
+  <body>
+    {% if url %}
+        <p>{{result}}</p>
+        <a href="{{url}}">Ссылка на ресурс</a>
+        <a href="{{back}}">Назад</a>
+    {% else %}
+      <p>{{result}}</p>
+      <a href="{{back}}">Назад</a>
+    {% endif %}
+  </body>
+</html>
